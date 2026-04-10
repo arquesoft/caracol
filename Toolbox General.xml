@@ -1,0 +1,19 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="CD0DE40928" name="Caracol_General" version="1.0" alias="General" notes="Alias=General;"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Caracol General" notes="" cx="269" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Caracol::Aplicación(UML::PackagingComponent)" type="" description="" unit="" values="" default="Aplicación"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

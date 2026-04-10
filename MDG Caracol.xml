@@ -1,0 +1,115 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<MDG.Technology version="1.0"><Documentation id="MDGCARACOLTV" name="CaracolTV" version="1.0" notes="MDG Technology para CaracolTV - Desarrollada por Arquesoft" supportURI="support@arquesoft.com"/><Icon><Image type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4A
+AAAAAAAAAAAAwMDAwMDAwMDAwMDAuLKwo4qBlGdSi0sci0sclGdTo4qBuLKw
+wMDAwMDAwMDAwMDAwMDAwMDAvr29o4qBi0sci0sci0sci0sci0sci0sci0sc
+i0sco4qBvr29wMDAwMDAwMDAvr29mnZni0sci0sci0sci0sci0sci0sci0sc
+i0sci0sci0scmnZnvr29wMDAwMDAo4qBi0sci0sci0sci0sci0sci0sci0sc
+i0sci0sci0sci0sci0sco4qBwMDAuLKwi0sci0sci0sci0sci0scoXtronxr
+i0sci0sci0sci0sci0sci0sci0scuLKwo4qBi0sci0sci0sci0scp4V4tJmQ
+zL246eTi8u/u39fUvqmjklw/i0sci0sco4qBlGdTi0sci0sci0sci0sci0sc
+wq+o+Pf39vT0ybmz1svH+/v79PPysJSJi0sclGdTi0sci0sc2M3J9fPy39fU
+ybm0+/v7+/v7+/v79fTzi0scwKuj+/v7+Pf3i0sci0sci0sci0sc8O3s+/v7
+spaMm25a+/v7+/v7+/v7+Pf3q4t/0cS/6uXkx7Wvi0sci0sclGdTi0scnnVj
+49za+Pf30MK918vI+/v7+vr6wq+oi0sci0sci0sci0sci0sclGdSo4qBi0sc
+i0sci0scpoN1z8G95N3b5d/dw7CpoXpqi0sci0sci0sci0sci0sco4qBuLKw
+i0sci0sci0sci0sci0sci0sci0sclWJJqYl8kFg4i0sci0sci0sci0scuLKw
+wMDAo4qBi0sci0sci0sci0sci0sci0sci0sci0sci0sci0sci0sci0sco4qB
+wMDAwMDAvr29mnZni0sci0sci0sci0sci0sci0sci0sci0sci0sci0scmnZn
+vr29wMDAwMDAwMDAvr29o4qBi0sci0sci0sci0sci0sci0sci0sci0sco4qB
+vr29wMDAwMDAwMDAwMDAwMDAwMDAuLKwo4qBlGdTi0sci0sclGdTo4qBuLKw
+wMDAwMDAwMDAwMDA
+</Image></Icon><UMLProfiles><UMLProfile profiletype="uml2">
+	<Documentation id="8D3948E715" name="Caracol" version="1.0" notes="Caracol"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Aplicación" metatype="Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="PackagingComponent">
+						<Property name="_tagGroupings" value="Estado Aplicación=Información General;Distribuidor=Información General;Usada por subsidiaria o filial=Información General;Servicios aplicación=Información General;Fecha de Implementación=Información General;Fecha estimada retiro=Información General;Tipo Aplicacion=Información Técnica;Cloud Computing=Información Técnica;Lenguaje o Tecnología=Información Técnica;Tipo de Infraestructura=Información Técnica;Descripción tipo SLA=Información Técnica;DRP=Información Técnica;Días de Disponibilidad=Información Técnica;Hora Inicio Disponibilidad=Información Técnica;Hora Fin Disponibilidad=Información Técnica;Ubicación Infraestructura=Información Técnica;URL Producción=Información Técnica;URL Desarrollo=Información Técnica;Integraciones=Información Técnica;Modelo de soporte=Soporte y Mantenimiento;Proveedor de soporte=Soporte y Mantenimiento;Fecha renovación soporte=Soporte y Mantenimiento;Usuarios Líderes=Propiedad y Responsables;Propietario Técnico Principal=Propiedad y Responsables;Propietario Técnico Backup=Propiedad y Responsables;Fecha Último Escaneo=Información de Seguridad;Tiene firewall=Información de Seguridad;Tiene certificado HTTPS=Información de Seguridad;Tiene acceso VPN=Información de Seguridad;Tiene 2FA=Información de Seguridad;Se conecta al DA=Información de Seguridad;Clasificación de Datos=Información de Seguridad;Manual de Usuario=Información de Procesos;Manual Técnico=Información de Procesos;Procedimientos de Operación=Información de Procesos;Procedimientos de Soporte=Información de Procesos;Políticas de Uso=Información de Procesos;Documentación de Integraciones=Información de Procesos;Historial de Cambios=Información de Procesos;Capacitaciones Disponibles=Información de Procesos;Criticidad=Riesgos y Criticidad del Negocio;"/>
+						<Property name="_tagGroups" value="Información General,Información Técnica,Soporte y Mantenimiento,Propiedad y Responsables,Información de Seguridad,Información de Procesos,Riesgos y Criticidad del Negocio"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Capacitaciones Disponibles" type="" description="" unit="" values="" default=""/>
+					<Tag name="Clasificación de Datos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cloud Computing" type="" description="" unit="" values="" default=""/>
+					<Tag name="Criticidad" type="" description="" unit="" values="" default=""/>
+					<Tag name="Descripción tipo SLA" type="" description="" unit="" values="" default=""/>
+					<Tag name="Días de Disponibilidad" type="" description="" unit="" values="" default=""/>
+					<Tag name="Distribuidor" type="" description="" unit="" values="" default=""/>
+					<Tag name="Documentación de Integraciones" type="" description="" unit="" values="" default=""/>
+					<Tag name="DRP" type="" description="" unit="" values="" default=""/>
+					<Tag name="Estado Aplicación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Fecha de Implementación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Fecha estimada retiro" type="" description="" unit="" values="" default=""/>
+					<Tag name="Fecha renovación soporte" type="" description="" unit="" values="" default=""/>
+					<Tag name="Fecha Último Escaneo" type="" description="" unit="" values="" default=""/>
+					<Tag name="Historial de Cambios" type="" description="" unit="" values="" default=""/>
+					<Tag name="Hora Fin Disponibilidad" type="" description="" unit="" values="" default=""/>
+					<Tag name="Hora Inicio Disponibilidad" type="" description="" unit="" values="" default=""/>
+					<Tag name="Integraciones" type="" description="" unit="" values="" default=""/>
+					<Tag name="Lenguaje o Tecnología" type="" description="" unit="" values="" default=""/>
+					<Tag name="Manual de Usuario" type="" description="" unit="" values="" default=""/>
+					<Tag name="Manual Técnico" type="" description="" unit="" values="" default=""/>
+					<Tag name="Modelo de soporte" type="" description="" unit="" values="" default=""/>
+					<Tag name="Políticas de Uso" type="" description="" unit="" values="" default=""/>
+					<Tag name="Procedimientos de Operación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Procedimientos de Soporte" type="" description="" unit="" values="" default=""/>
+					<Tag name="Propietario Técnico Backup" type="" description="" unit="" values="" default=""/>
+					<Tag name="Propietario Técnico Principal" type="" description="" unit="" values="" default=""/>
+					<Tag name="Proveedor de soporte" type="" description="" unit="" values="" default=""/>
+					<Tag name="Se conecta al DA" type="" description="" unit="" values="" default=""/>
+					<Tag name="Servicios aplicación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tiene 2FA" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tiene acceso VPN" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tiene certificado HTTPS" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tiene firewall" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Aplicacion" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo de Infraestructura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Ubicación Infraestructura" type="" description="" unit="" values="" default=""/>
+					<Tag name="URL Desarrollo" type="" description="" unit="" values="" default=""/>
+					<Tag name="URL Producción" type="" description="" unit="" values="" default=""/>
+					<Tag name="Usada por subsidiaria o filial" type="" description="" unit="" values="" default=""/>
+					<Tag name="Usuarios Líderes" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile></UMLProfiles><DiagramProfile><UMLProfile profiletype="uml2">
+	<Documentation id="BEA695EFA3" name="Caracol" version="1.0" notes="Caracol"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Diagrama General Caracol" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Logical">
+						<Property name="pdata" value="HideParents=1;"/>
+						<Property name="toolbox" value="Caracol_General"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile></DiagramProfile><UIToolboxes><UMLProfile profiletype="uml2">
+	<Documentation id="CD0DE40928" name="Caracol_General" version="1.0" alias="General" notes="Alias=General;"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Caracol General" notes="" cx="269" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Caracol::Aplicación(UML::PackagingComponent)" type="" description="" unit="" values="" default="Aplicación"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile></UIToolboxes></MDG.Technology>

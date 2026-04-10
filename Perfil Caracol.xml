@@ -1,0 +1,62 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="8D3948E715" name="Caracol" version="1.0" notes="Caracol"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Aplicación" metatype="Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="PackagingComponent">
+						<Property name="_tagGroupings" value="Estado Aplicación=Información General;Distribuidor=Información General;Usada por subsidiaria o filial=Información General;Servicios aplicación=Información General;Fecha de Implementación=Información General;Fecha estimada retiro=Información General;Tipo Aplicacion=Información Técnica;Cloud Computing=Información Técnica;Lenguaje o Tecnología=Información Técnica;Tipo de Infraestructura=Información Técnica;Descripción tipo SLA=Información Técnica;DRP=Información Técnica;Días de Disponibilidad=Información Técnica;Hora Inicio Disponibilidad=Información Técnica;Hora Fin Disponibilidad=Información Técnica;Ubicación Infraestructura=Información Técnica;URL Producción=Información Técnica;URL Desarrollo=Información Técnica;Integraciones=Información Técnica;Modelo de soporte=Soporte y Mantenimiento;Proveedor de soporte=Soporte y Mantenimiento;Fecha renovación soporte=Soporte y Mantenimiento;Usuarios Líderes=Propiedad y Responsables;Propietario Técnico Principal=Propiedad y Responsables;Propietario Técnico Backup=Propiedad y Responsables;Fecha Último Escaneo=Información de Seguridad;Tiene firewall=Información de Seguridad;Tiene certificado HTTPS=Información de Seguridad;Tiene acceso VPN=Información de Seguridad;Tiene 2FA=Información de Seguridad;Se conecta al DA=Información de Seguridad;Clasificación de Datos=Información de Seguridad;Manual de Usuario=Información de Procesos;Manual Técnico=Información de Procesos;Procedimientos de Operación=Información de Procesos;Procedimientos de Soporte=Información de Procesos;Políticas de Uso=Información de Procesos;Documentación de Integraciones=Información de Procesos;Historial de Cambios=Información de Procesos;Capacitaciones Disponibles=Información de Procesos;Criticidad=Riesgos y Criticidad del Negocio;"/>
+						<Property name="_tagGroups" value="Información General,Información Técnica,Soporte y Mantenimiento,Propiedad y Responsables,Información de Seguridad,Información de Procesos,Riesgos y Criticidad del Negocio"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Capacitaciones Disponibles" type="" description="" unit="" values="" default=""/>
+					<Tag name="Clasificación de Datos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cloud Computing" type="" description="" unit="" values="" default=""/>
+					<Tag name="Criticidad" type="" description="" unit="" values="" default=""/>
+					<Tag name="Descripción tipo SLA" type="" description="" unit="" values="" default=""/>
+					<Tag name="Días de Disponibilidad" type="" description="" unit="" values="" default=""/>
+					<Tag name="Distribuidor" type="" description="" unit="" values="" default=""/>
+					<Tag name="Documentación de Integraciones" type="" description="" unit="" values="" default=""/>
+					<Tag name="DRP" type="" description="" unit="" values="" default=""/>
+					<Tag name="Estado Aplicación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Fecha de Implementación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Fecha estimada retiro" type="" description="" unit="" values="" default=""/>
+					<Tag name="Fecha renovación soporte" type="" description="" unit="" values="" default=""/>
+					<Tag name="Fecha Último Escaneo" type="" description="" unit="" values="" default=""/>
+					<Tag name="Historial de Cambios" type="" description="" unit="" values="" default=""/>
+					<Tag name="Hora Fin Disponibilidad" type="" description="" unit="" values="" default=""/>
+					<Tag name="Hora Inicio Disponibilidad" type="" description="" unit="" values="" default=""/>
+					<Tag name="Integraciones" type="" description="" unit="" values="" default=""/>
+					<Tag name="Lenguaje o Tecnología" type="" description="" unit="" values="" default=""/>
+					<Tag name="Manual de Usuario" type="" description="" unit="" values="" default=""/>
+					<Tag name="Manual Técnico" type="" description="" unit="" values="" default=""/>
+					<Tag name="Modelo de soporte" type="" description="" unit="" values="" default=""/>
+					<Tag name="Políticas de Uso" type="" description="" unit="" values="" default=""/>
+					<Tag name="Procedimientos de Operación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Procedimientos de Soporte" type="" description="" unit="" values="" default=""/>
+					<Tag name="Propietario Técnico Backup" type="" description="" unit="" values="" default=""/>
+					<Tag name="Propietario Técnico Principal" type="" description="" unit="" values="" default=""/>
+					<Tag name="Proveedor de soporte" type="" description="" unit="" values="" default=""/>
+					<Tag name="Se conecta al DA" type="" description="" unit="" values="" default=""/>
+					<Tag name="Servicios aplicación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tiene 2FA" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tiene acceso VPN" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tiene certificado HTTPS" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tiene firewall" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Aplicacion" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo de Infraestructura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Ubicación Infraestructura" type="" description="" unit="" values="" default=""/>
+					<Tag name="URL Desarrollo" type="" description="" unit="" values="" default=""/>
+					<Tag name="URL Producción" type="" description="" unit="" values="" default=""/>
+					<Tag name="Usada por subsidiaria o filial" type="" description="" unit="" values="" default=""/>
+					<Tag name="Usuarios Líderes" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>
