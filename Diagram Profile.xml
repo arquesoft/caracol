@@ -3,11 +3,35 @@
 	<Documentation id="BEA695EFA3" name="Caracol" version="1.0" notes="Caracol"/>
 	<Content>
 		<Stereotypes>
+			<Stereotype name="Diagrama Aplicaciones Caracol" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Component">
+						<Property name="pdata" value="HideParents=1;"/>
+						<Property name="toolbox" value="Caracol_Aplicaciones"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Diagrama Datos Caracol" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Logical">
+						<Property name="pdata" value="HideParents=1;"/>
+						<Property name="toolbox" value="Caracol_Datos"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
 			<Stereotype name="Diagrama General Caracol" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="Diagram_Logical">
 						<Property name="pdata" value="HideParents=1;"/>
 						<Property name="toolbox" value="Caracol_General"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Diagrama Infraestructura Caracol" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Deployment">
+						<Property name="pdata" value="HideParents=1;"/>
+						<Property name="toolbox" value="Caracol_Infraestructura"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>

@@ -6,11 +6,12 @@
 			<Stereotype name="Aplicación" metatype="Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="PackagingComponent">
-						<Property name="_tagGroupings" value="Estado Aplicación=Información General;Distribuidor=Información General;Usada por subsidiaria o filial=Información General;Servicios aplicación=Información General;Fecha de Implementación=Información General;Fecha estimada retiro=Información General;Tipo Aplicacion=Información Técnica;Cloud Computing=Información Técnica;Lenguaje o Tecnología=Información Técnica;Tipo de Infraestructura=Información Técnica;Descripción tipo SLA=Información Técnica;DRP=Información Técnica;Días de Disponibilidad=Información Técnica;Hora Inicio Disponibilidad=Información Técnica;Hora Fin Disponibilidad=Información Técnica;Ubicación Infraestructura=Información Técnica;URL Producción=Información Técnica;URL Desarrollo=Información Técnica;Integraciones=Información Técnica;Modelo de soporte=Soporte y Mantenimiento;Proveedor de soporte=Soporte y Mantenimiento;Fecha renovación soporte=Soporte y Mantenimiento;Usuarios Líderes=Propiedad y Responsables;Propietario Técnico Principal=Propiedad y Responsables;Propietario Técnico Backup=Propiedad y Responsables;Fecha Último Escaneo=Información de Seguridad;Tiene firewall=Información de Seguridad;Tiene certificado HTTPS=Información de Seguridad;Tiene acceso VPN=Información de Seguridad;Tiene 2FA=Información de Seguridad;Se conecta al DA=Información de Seguridad;Clasificación de Datos=Información de Seguridad;Manual de Usuario=Información de Procesos;Manual Técnico=Información de Procesos;Procedimientos de Operación=Información de Procesos;Procedimientos de Soporte=Información de Procesos;Políticas de Uso=Información de Procesos;Documentación de Integraciones=Información de Procesos;Historial de Cambios=Información de Procesos;Capacitaciones Disponibles=Información de Procesos;Criticidad=Riesgos y Criticidad del Negocio;"/>
+						<Property name="_tagGroupings" value="Estado Aplicación=Información General;Distribuidor=Información General;Usada por subsidiaria o filial=Información General;Servicios aplicación=Información General;Fecha de Implementación=Información General;Fecha estimada retiro=Información General;Tipo Aplicación=Información Técnica;Cloud Computing=Información Técnica;Lenguaje o Tecnología=Información Técnica;Tipo de Infraestructura=Información Técnica;Descripción tipo SLA=Información Técnica;DRP=Información Técnica;Días de Disponibilidad=Información Técnica;Hora Inicio Disponibilidad=Información Técnica;Hora Fin Disponibilidad=Información Técnica;Ubicación Infraestructura=Información Técnica;URL Producción=Información Técnica;URL Desarrollo=Información Técnica;Integraciones=Información Técnica;Modelo de soporte=Soporte y Mantenimiento;Proveedor de soporte=Soporte y Mantenimiento;Fecha renovación soporte=Soporte y Mantenimiento;Usuarios Líderes=Propiedad y Responsables;Propietario Técnico Principal=Propiedad y Responsables;Propietario Técnico Backup=Propiedad y Responsables;Administración basada en roles=Propiedad y Responsables;Fecha Último Escaneo=Información de Seguridad;Tiene firewall=Información de Seguridad;Tiene certificado HTTPS=Información de Seguridad;Tiene acceso VPN=Información de Seguridad;Tiene 2FA=Información de Seguridad;Se conecta al DA=Información de Seguridad;Clasificación de Datos=Información de Seguridad;Manual de Usuario=Información de Procesos;Manual Técnico=Información de Procesos;Procedimientos de Operación=Información de Procesos;Procedimientos de Soporte=Información de Procesos;Políticas de Uso=Información de Procesos;Documentación de Integraciones=Información de Procesos;Historial de Cambios=Información de Procesos;Capacitaciones Disponibles=Información de Procesos;Criticidad=Riesgos y Criticidad del Negocio;"/>
 						<Property name="_tagGroups" value="Información General,Información Técnica,Soporte y Mantenimiento,Propiedad y Responsables,Información de Seguridad,Información de Procesos,Riesgos y Criticidad del Negocio"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="Administración basada en roles" type="" description="" unit="" values="" default=""/>
 					<Tag name="Capacitaciones Disponibles" type="" description="" unit="" values="" default=""/>
 					<Tag name="Clasificación de Datos" type="" description="" unit="" values="" default=""/>
 					<Tag name="Cloud Computing" type="" description="" unit="" values="" default=""/>
@@ -45,13 +46,146 @@
 					<Tag name="Tiene acceso VPN" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tiene certificado HTTPS" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tiene firewall" type="" description="" unit="" values="" default=""/>
-					<Tag name="Tipo Aplicacion" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Aplicación" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo de Infraestructura" type="" description="" unit="" values="" default=""/>
 					<Tag name="Ubicación Infraestructura" type="" description="" unit="" values="" default=""/>
 					<Tag name="URL Desarrollo" type="" description="" unit="" values="" default=""/>
 					<Tag name="URL Producción" type="" description="" unit="" values="" default=""/>
 					<Tag name="Usada por subsidiaria o filial" type="" description="" unit="" values="" default=""/>
 					<Tag name="Usuarios Líderes" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Base de datos" metatype="Base de datos" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4A
+AAAAAAAAAAAAwMDAwMDAwMDAxLm0zamU05x415Nf2I9S2I9S15Nf05x4zamU
+xLm0wMDAwMDAwMDAwMDAwMDAy62d2I9S1YhG04I7141P2I9S2I9S2I9S1ZJi
+1ZJi2I9Sy62dwMDAwMDAwMDAwMDA141Q04E41olI2I9S2I9S2I9S2I9S2I9S
+1ZJi1ZJixoyM2I9TwMDAwMDAwMDAwMDA2I9S1otM04E50Honz3UTznMFznMF
+z3UT0Hon04E51otL2I9SwMDAwMDAwMDAwMDA1IQ+0Hgg04I71olI141P2I9S
+2I9S141P1olI04I70Hgg1IQ+wMDAwMDAwMDAwMDA0oA32I9S1YhG04I7141P
+2I9S2I9S2I9S1I5h1I5h2I9S0oA3wMDAwMDAwMDAwMDA141Q04E41olI2I9S
+2I9S2I9S2I9S2I9S1I5h1I5hx5+M2I9TwMDAwMDAwMDAwMDA2I9S1otM04E5
+0Honz3UTznMFznMFz3UT0Hon04E51otL2I9SwMDAwMDAwMDAwMDA1IQ+0Hgg
+04I71olI141P2I9S2I9S141P1olI04I70Hgg1IQ+wMDAwMDAwMDAwMDA0oA3
+2I9S1YhG04I7141P2I9S2I9S2I9S1ZJi1ZJi2I9S0oA3wMDAwMDAwMDAwMDA
+141Q04E41olI2I9S2I9S2I9S2I9S2I9S1ZJi1ZJixoyM2I9TwMDAwMDAwMDA
+wMDA2I9S25hj4KmA5LSQ5rmW57qY5reT5LCH4ah53qBu2pRc2I9SwMDAwMDA
+wMDAwMDA4ayG7Mqy7Mqy7Mqy7Mqy7Mqy7Mqy7Mqy6sar5rmV466C3Z5rwMDA
+wMDAwMDAwMDA7Mqy7Mqy7Mqy7Mqy7Mqy7Mqy7Mqy7Mqy7Mqy7Mqy57qZ466C
+wMDAwMDAwMDAwMDA1MS67Mqy7Mqy7Mqy7Mqy7Mqy7Mqy7Mqy7Mqy7Mqy57yb
+0LmowMDAwMDAwMDAwMDAwMDAyMK+2MW548i16cmz7Mqy7Mqy6cmz48i12MS2
+xr24wMDAwMDAwMDA
+</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAAiOvFxvdG9vCgIAAGIGAAAHABEAc3RyLmRhdFVUDQAH1H8Y
+atR/GGrUfxhqjVRNT8JAEJ2zif+hwQOQGLUFVGI8YLxKTNSzAVpF5aO2gCbG
+n8zJP+B7syxluwYJYT9nZt+8edNchtKTVBIJZIzVi0xkX/bkS8dg9TvGL5CO
+jPQ+gd0Aqx+sA4mxH2GeYf7EOHU8h/IIa/o9q/Ul/hV4J9jRI8PuwvFY7Ozh
+IwzlCOM1fPsyl1fEybA3+AY4oXcKhAVq5mGyinHnYs/xHiPM4NPDOJSa1Eto
+x/BZIBbzrsmJHOLs3LOyvG1atSXy7PyMrvByrtUh/gxv9bCuYXzHfilEyXGO
+uadocuyIeqCvBZpvptaMkug982FePCmYmCrDtJ6opz0h9jnWdQdf8UaRd1Pn
+EHtzUqyKnN3z/1hwmSv8duPYWLkRqaN4S0WfVBEj3NOOGqAu3uDn+/j1ilSB
+98KeYqVyMMfuyhCVzO6mPFrwLtXa22zKnIZyugVJQ5F0tEpGFabq7C3Gt0oh
+cxypdYO5BtXdyo10hb3EnHl6t9JGUtKBee3B0V91pY6qGAb4Hr03UTDLBXI0
+PRasFWrUHq97mPUixqVWl91gOLT65FfHfousrXmpr3hpm/+hXMvqWYnVCMxt
+st3yWG95mnEjhl4fNJwKRl4X8GR7zAjW5ZgGub1vezHbW9TRVHV0wdAYPLGq
+llWjhoHOrMWmb6o65jfhQ2uYqrZjoKzIAc6pgASryvrlb/kFUEsBAhcLFAAA
+AAgACI68XG90b28KAgAAYgYAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRV
+VAUAB9R/GGpQSwUGAAAAAAEAAQA+AAAAQAIAAAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Motor base de datos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo base de datos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Versión motor" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Componente" metatype="Componente" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Tipo de Componente" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Formato o Macro" metatype="Formato o Macro" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Tipo Formato o Macro" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Función de usuario" metatype="Función de usuario" notes="" cx="0" cy="0" bgcolor="16776884" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationFunction" baseStereotypes="ArchiMate3::ArchiMate_ApplicationFunction">
+				<AppliesTo>
+					<Apply type="Activity">
+						<Property name="isReadOnly" value="false"/>
+						<Property name="isSingleExecution" value=""/>
+						<Property name="parameterName" value=""/>
+						<Property name="postcondition" value=""/>
+						<Property name="precondition" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Informe" metatype="Informe" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Tipo Informe" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Menú" metatype="Menú" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Nodo Servicio" metatype="Nodo Servicio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Perfil de usuario" metatype="Perfil de usuario" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Actor"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Servicio" metatype="Servicio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ProvidedInterface"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Host ADC" type="" description="" unit="" values="" default=""/>
+					<Tag name="Host server" type="" description="" unit="" values="" default=""/>
+					<Tag name="Path" type="" description="" unit="" values="" default=""/>
+					<Tag name="Petición HTTP" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Servidor" metatype="Servidor" notes="" cx="0" cy="0" bgcolor="12451773" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Node" baseStereotypes="ArchiMate3::ArchiMate_Node">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="IP" type="" description="" unit="" values="" default=""/>
+					<Tag name="Memoria (GB)" type="" description="" unit="" values="" default=""/>
+					<Tag name="Rol" type="" description="" unit="" values="" default=""/>
+					<Tag name="Sistema Operativo" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Servidor" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>

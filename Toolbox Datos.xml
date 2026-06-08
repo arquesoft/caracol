@@ -1,0 +1,21 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="382BD95AD9" name="Caracol_Datos" version="1.0" alias="Datos" notes="Alias=Datos;"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Caracol Datos" notes="" cx="260" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Caracol::Base de datos(UML::Class)" type="" description="" unit="" values="" default="Base de datos"/>
+					<Tag name="Caracol::Formato o Macro(UML::Class)" type="" description="" unit="" values="" default="Formato o Macro"/>
+					<Tag name="Caracol::Informe(UML::Class)" type="" description="" unit="" values="" default="Informe"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

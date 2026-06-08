@@ -1,0 +1,19 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="EC67E21CDF" name="Caracol_Infraestructura" version="1.0" alias="Infraestructura" notes="Alias=Infraestructura;"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Caracol Infraestructura" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Caracol::Servidor(UML::Class)" type="" description="" unit="" values="" default="Servidor"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>
