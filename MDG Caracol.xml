@@ -188,6 +188,7 @@ VAUAB9R/GGpQSwUGAAAAAAEAAQA+AAAAQAIAAAAA
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Host ADC" type="" description="" unit="" values="" default=""/>
+					<Tag name="Host Pruebas" type="" description="" unit="" values="" default=""/>
 					<Tag name="Host server" type="" description="" unit="" values="" default=""/>
 					<Tag name="Path" type="" description="" unit="" values="" default=""/>
 					<Tag name="Petición HTTP" type="" description="" unit="" values="" default=""/>
@@ -257,7 +258,7 @@ VAUAB9R/GGpQSwUGAAAAAAEAAQA+AAAAQAIAAAAA
 	<Documentation id="F980E6B29F" name="Caracol_Aplicaciones" version="1.0" alias="Aplicaciones" notes="Alias=Aplicaciones;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Caracol Aplicaciones" notes="" cx="280" cy="153" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Caracol Aplicaciones" notes="" cx="280" cy="140" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
@@ -269,6 +270,7 @@ VAUAB9R/GGpQSwUGAAAAAAEAAQA+AAAAQAIAAAAA
 					<Tag name="Caracol::Nodo Servicio(UML::Component)" type="" description="" unit="" values="" default="Nodo Servicio"/>
 					<Tag name="Caracol::Perfil de usuario(UML::Actor)" type="" description="" unit="" values="" default="Perfil de usuario"/>
 					<Tag name="Caracol::Servicio(UML::ProvidedInterface)" type="" description="" unit="" values="" default="Servicio"/>
+					<Tag name="UML::Association" type="" description="" unit="" values="" default="Asociación"/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>

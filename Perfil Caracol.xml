@@ -169,6 +169,7 @@ VAUAB9R/GGpQSwUGAAAAAAEAAQA+AAAAQAIAAAAA
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Host ADC" type="" description="" unit="" values="" default=""/>
+					<Tag name="Host Pruebas" type="" description="" unit="" values="" default=""/>
 					<Tag name="Host server" type="" description="" unit="" values="" default=""/>
 					<Tag name="Path" type="" description="" unit="" values="" default=""/>
 					<Tag name="Petición HTTP" type="" description="" unit="" values="" default=""/>
