@@ -1,0 +1,118 @@
+{
+ "client": "caracol",
+ "connection": "CRCL --- ;Connect=Cloud=protocol:http,address:172.17.4.43,port:1804;Data Source=EACONNECTION;DSN=EACONNECTION;",
+ "dialect": "SQLSVR",
+ "fingerprint": [
+  "{1514A859-197C-4785-AE3A-953E39A984F2}",
+  "{30D26456-353A-485d-90F0-AB1DBBA49AF2}",
+  "{8C630D70-5F37-4130-9EF6-05BB1C7CFE4E}",
+  "{C64E9B1E-8907-4b1f-B2F5-EDC25B765C6C}"
+ ],
+ "groups": {
+  "{05B192DD-0EB9-4106-9E71-2EB49FC5E4EE}": {
+   "folder": "Arquesoft Admin",
+   "name": "Arquesoft Admin",
+   "notes": "<Group Type=\"NORMAL\" Notes=\"\"/>",
+   "type": "NORMAL"
+  },
+  "{3AD495CD-775F-4854-BB00-5F116D34E345}": {
+   "folder": "Speed test",
+   "name": "Speed test",
+   "notes": "<Group Type=\"PROJBROWSER\" Notes=\"\"/>",
+   "type": "PROJBROWSER"
+  },
+  "{BB58F3AB-CBCD-4392-AB4B-C0B3465161FF}": {
+   "folder": "Arquesoft - Project Browser",
+   "name": "Arquesoft - Project Browser",
+   "notes": "<Group Type=\"PROJBROWSER\" Notes=\"\"/>",
+   "type": "PROJBROWSER"
+  },
+  "{CD934059-D820-4d32-9FE6-5B87C4BD4A18}": {
+   "folder": "Caracol - Normal",
+   "name": "Caracol - Normal",
+   "notes": "<Group Type=\"NORMAL\" Notes=\"\"/>",
+   "type": "NORMAL"
+  },
+  "{D36CD2AC-1F36-4082-99F1-A5031ED226DA}": {
+   "folder": "Caracol - Project Browser",
+   "name": "Caracol - Project Browser",
+   "notes": "<Group Type=\"PROJBROWSER\" Notes=\"\"/>",
+   "type": "PROJBROWSER"
+  },
+  "{ECB802B3-E11B-4e1a-8A64-82CC966EF439}": {
+   "folder": "Arquesoft",
+   "name": "Arquesoft",
+   "notes": "<Group Type=\"NORMAL\" Notes=\"\"/>",
+   "type": "NORMAL"
+  }
+ },
+ "hash_mode": "utf16le",
+ "last_pull": "2026-11-20T23:40:57",
+ "last_push": null,
+ "scripts": {
+  "{1A75C1B9-9B85-4f86-821B-58AA3B2E4B08}": {
+   "group": "{05B192DD-0EB9-4106-9E71-2EB49FC5E4EE}",
+   "hash": "E742B4524EE64C5F23E2421836A7A01D2933B11E7A125D938626C40AE5620624",
+   "lang": "JScript",
+   "name": "Migrar Servicios",
+   "notes": "<Script Name=\"Migrar Servicios\" Type=\"Internal\" Language=\"JScript\"/>",
+   "path": "Arquesoft Admin/Migrar Servicios.js",
+   "sha": "5FA885054498A8AADF15A2F2E9CD88A487AD541FBB4DBD2B33A6A125B0391419"
+  },
+  "{53BBC5E7-CE6A-4471-AC14-41B36E078D29}": {
+   "group": "{ECB802B3-E11B-4e1a-8A64-82CC966EF439}",
+   "hash": "A72B5D85054B6F6359DCE02BFBE4D8D35C33ED36D4EA786564D52050907B2921",
+   "lang": "JScript",
+   "name": "Arquesoft-Lib",
+   "notes": "<Script Name=\"Arquesoft-Lib\" Type=\"Internal\" Language=\"JScript\"/>",
+   "path": "Arquesoft/Arquesoft-Lib.js",
+   "sha": "94836813A3198725D62C8462E7B602D5ED312AC9ADD76B2BB92D46C177B60389"
+  },
+  "{5679B29F-53B7-484d-BD4D-9E6AE37C4CF1}": {
+   "group": "{3AD495CD-775F-4854-BB00-5F116D34E345}",
+   "hash": "05A48844884AE36E305945E2543E6F92ED9C2E3AB378708A05BCD35E7B305DA4",
+   "lang": "JScript",
+   "name": "speed test",
+   "notes": "<Script Name=\"speed test\" Type=\"Internal\" Language=\"JScript\"/>",
+   "path": "Speed test/speed test.js",
+   "sha": "2A5E9720AD725133DBA6CA4826020068BB83F13BB51FF2885DF9A124D07AA28B"
+  },
+  "{5E30FFCB-41CA-4889-872D-F7A3AAF71593}": {
+   "group": "{D36CD2AC-1F36-4082-99F1-A5031ED226DA}",
+   "hash": "249309470D8CDA896C540B5D737A242475E694B0D3615A05778B0E988E68ED2B",
+   "lang": "JScript",
+   "name": "Renombrar contenido de una Aplicación",
+   "notes": "<Script Name=\"Renombrar contenido de una Aplicación\" Type=\"Internal\" Language=\"JScript\"/>",
+   "path": "Caracol - Project Browser/Renombrar contenido de una Aplicación.js",
+   "sha": "5C66BD5ED02AE6700F61C5D20F1A50F15F64779446ED7A1E2C3F5EA233C91C98"
+  },
+  "{93D5C7C4-D496-495b-B612-4B5C13C60D6A}": {
+   "group": "{05B192DD-0EB9-4106-9E71-2EB49FC5E4EE}",
+   "hash": "FD70A1699C8DE95059F6673E9614DCACAE23A0ADBBB68CBCADDE6F812444280C",
+   "lang": "JScript",
+   "name": "Migrar aplicaciones",
+   "notes": "<Script Name=\"Migrar aplicaciones\" Type=\"Internal\" Language=\"JScript\"/>",
+   "path": "Arquesoft Admin/Migrar aplicaciones.js",
+   "sha": "E7B87796D56EB184501E7E312B90A604D1ED17BA47090221319556B35934D6D4"
+  },
+  "{94EADA0C-FBDD-42d8-B44B-E3FA177D5449}": {
+   "group": "{CD934059-D820-4d32-9FE6-5B87C4BD4A18}",
+   "hash": "A13C99B9D299433087AF6253568E1D8E03F94E4407F3D579094B039B507F2AEE",
+   "lang": "JScript",
+   "name": "Reporte de Proyectos",
+   "notes": "<Script Name=\"Reporte de Proyectos\" Type=\"Internal\" Language=\"JScript\"/>",
+   "path": "Caracol - Normal/Reporte de Proyectos.js",
+   "sha": "9E7B22BC32B568624BEC89A1E74B06D55CB69C05F06DA39869E1ED510F56C33E"
+  },
+  "{A134CBBC-C82B-420a-BE17-3CFC286D0E64}": {
+   "group": "{BB58F3AB-CBCD-4392-AB4B-C0B3465161FF}",
+   "hash": "CF4A3A562F0389F3E4D3562B973B23FC6F6D11D11B72164F7D1F3C134015634C",
+   "lang": "JScript",
+   "name": "Mover elementos de acuerdo a paquete",
+   "notes": "<Script Name=\"Mover elementos de acuerdo a paquete\" Type=\"Internal\" Language=\"JScript\"/>",
+   "path": "Arquesoft - Project Browser/Mover elementos de acuerdo a paquete.js",
+   "sha": "D8B48191EB9D7923BD2075871579C03A0231BCF132F45D2A61505D678BA695ED"
+  }
+ },
+ "tool_version": "1"
+}
