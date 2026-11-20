@@ -399,7 +399,6 @@ function hojaAvance(ws, filas, secciones, subt) {
 			cel.Value = SIMBOLO[st];
 			pintar(cel, FILL_ST[st], FONT_ST[st], true);
 		}
-		ws.Cells(r, cHechas).NumberFormat = "@";
 		ws.Cells(r, cHechas).Value = "'" + f.hechas + " de " + nSec;
 		var cp = ws.Cells(r, cPct);
 		cp.Value = f.pct;

@@ -48,7 +48,7 @@
  },
  "hash_mode": "utf16le",
  "last_pull": "2026-11-20T23:40:57",
- "last_push": null,
+ "last_push": "2026-11-20T23:53:39",
  "scripts": {
   "{1A75C1B9-9B85-4f86-821B-58AA3B2E4B08}": {
    "group": "{05B192DD-0EB9-4106-9E71-2EB49FC5E4EE}",
@@ -97,12 +97,12 @@
   },
   "{94EADA0C-FBDD-42d8-B44B-E3FA177D5449}": {
    "group": "{CD934059-D820-4d32-9FE6-5B87C4BD4A18}",
-   "hash": "A13C99B9D299433087AF6253568E1D8E03F94E4407F3D579094B039B507F2AEE",
+   "hash": "1BC1426968AD66A9315D2D1D50B07EF76FB3697B83462D622C293FBFA510A68F",
    "lang": "JScript",
    "name": "Reporte de Proyectos",
    "notes": "<Script Name=\"Reporte de Proyectos\" Type=\"Internal\" Language=\"JScript\"/>",
    "path": "Caracol - Normal/Reporte de Proyectos.js",
-   "sha": "9E7B22BC32B568624BEC89A1E74B06D55CB69C05F06DA39869E1ED510F56C33E"
+   "sha": "82BC08946C2E6B514F4ECF392549D993A6CB2B6B1F99395B2BFCC866B7D1A6A2"
   },
   "{A134CBBC-C82B-420a-BE17-3CFC286D0E64}": {
    "group": "{BB58F3AB-CBCD-4392-AB4B-C0B3465161FF}",
