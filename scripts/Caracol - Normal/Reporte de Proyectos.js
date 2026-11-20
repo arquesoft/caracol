@@ -30,6 +30,9 @@
  *   - ✖ No existe   -> la aplicación no tiene el paquete de esa sección
  *
  *   % Avance = secciones hechas / total de secciones de la plantilla
+ *   No se evalúan las secciones de SECCIONES_EXCLUIDAS (Funcionalidades y
+ *   Consideraciones especiales), aunque existan en la plantilla.
+ *   Responsable = tagged value "Propietario Técnico Principal" de la aplicación.
  */
 
 // ---------------------------------------------------------------- Configuración
@@ -37,6 +40,9 @@ var RUTA_EN_CURSO   = ["Proyectos", "En curso"];
 var RUTA_PLANTILLA  = ["Proyectos", "Plantillas", "Aplicación"];
 var ESTEREOTIPO_APP = "Aplicación";
 var ESTEREOTIPOS_SECCION_EXCLUIDOS = ["master document"];   // Generación de Documento - Manual Técnico
+var SECCIONES_EXCLUIDAS = ["Funcionalidades", "Consideraciones especiales"];   // no hacen parte del avance
+var TAG_RESPONSABLE = "Propietario Técnico Principal";
+var SIN_RESPONSABLE = "(sin asignar)";
 var MIN_PALABRAS_NUEVAS = 8;
 var NOMBRE_ARCHIVO  = "Avance_Aplicaciones_Caracol";
 
@@ -100,7 +106,26 @@ function tieneEstereotipo(pkg, st) {
 function esSeccionExcluida(pkg) {
 	for (var i = 0; i < ESTEREOTIPOS_SECCION_EXCLUIDOS.length; i++)
 		if (tieneEstereotipo(pkg, ESTEREOTIPOS_SECCION_EXCLUIDOS[i])) return true;
+	var nn = norm(pkg.Name);
+	for (var j = 0; j < SECCIONES_EXCLUIDAS.length; j++) {
+		var ex = norm(SECCIONES_EXCLUIDAS[j]);
+		if (nn == ex || nn.indexOf(ex + " -") == 0 || nn.indexOf(ex + "-") == 0) return true;
+	}
 	return false;
+}
+
+// Valor del tagged value del responsable en el elemento de la aplicación
+function leerResponsable(appPkg) {
+	var el = appPkg.Element;
+	if (el == null) return SIN_RESPONSABLE;
+	for (var i = 0; i < el.TaggedValues.Count; i++) {
+		var tv = el.TaggedValues.GetAt(i);
+		if (norm(tv.Name) == norm(TAG_RESPONSABLE)) {
+			var v = ("" + (tv.Value == null ? "" : tv.Value)).replace(/^\s+|\s+$/g, "");
+			return v ? v : SIN_RESPONSABLE;
+		}
+	}
+	return SIN_RESPONSABLE;
 }
 
 // Cuenta diagramas, objetos en diagramas y elementos (recursivo)
@@ -240,7 +265,7 @@ function leerPlantilla(pkgPlantilla) {
 }
 
 function evaluarAplicacion(appPkg, secciones, detalle) {
-	var fila = { nombre: appPkg.Name, estados: [], hechas: 0, pct: 0 };
+	var fila = { nombre: appPkg.Name, responsable: leerResponsable(appPkg), estados: [], hechas: 0, pct: 0 };
 	var extra = conjuntoPalabras(appPkg.Name);
 	for (var s = 0; s < secciones.length; s++) {
 		var sec = secciones[s];
@@ -335,15 +360,16 @@ function encabezado(r) {
 function hojaAvance(ws, filas, secciones, subt) {
 	ws.Name = "Avance";
 	var nSec = secciones.length;
-	var cIni = 4, cHechas = cIni + nSec, cPct = cHechas + 1, ncols = cPct;
+	var cIni = 5, cHechas = cIni + nSec, cPct = cHechas + 1, ncols = cPct;
 	titulo(ws, "Avance de documentación de aplicaciones – Caracol", subt, ncols);
 
 	var rH = 4;
 	ws.Cells(rH, 1).Value = "#";
 	ws.Cells(rH, 2).Value = "Aplicación";
-	ws.Cells(rH, 3).Value = "Estado";
+	ws.Cells(rH, 3).Value = "Responsable";
+	ws.Cells(rH, 4).Value = "Estado";
 	for (var s = 0; s < nSec; s++) ws.Cells(rH, cIni + s).Value = secciones[s].nombre;
-	ws.Cells(rH, cHechas).Value = "Secciones hechas";
+	ws.Cells(rH, cHechas).Value = "Secciones hechas (de " + nSec + ")";
 	ws.Cells(rH, cPct).Value = "% Avance";
 	encabezado(rango(ws, rH, 1, rH, ncols));
 	ws.Rows(rH).RowHeight = 62;
@@ -363,16 +389,18 @@ function hojaAvance(ws, filas, secciones, subt) {
 		var f = filas[i], r = r0 + i;
 		ws.Cells(r, 1).Value = i + 1;
 		ws.Cells(r, 2).Value = f.nombre;
-		ws.Cells(r, 3).Value = f.estado;
+		ws.Cells(r, 3).Value = f.responsable;
+		ws.Cells(r, 4).Value = f.estado;
 		var ce = colorEstado(f.estado);
-		pintar(ws.Cells(r, 3), ce[0], ce[1], true);
-		if (i % 2 == 1) pintar(rango(ws, r, 1, r, 2), C_ZEBRA, null, false);
+		pintar(ws.Cells(r, 4), ce[0], ce[1], true);
+		if (i % 2 == 1) pintar(rango(ws, r, 1, r, 3), C_ZEBRA, null, false);
 		for (var s3 = 0; s3 < nSec; s3++) {
 			var st = f.estados[s3], cel = ws.Cells(r, cIni + s3);
 			cel.Value = SIMBOLO[st];
 			pintar(cel, FILL_ST[st], FONT_ST[st], true);
 		}
-		ws.Cells(r, cHechas).Value = f.hechas + " / " + nSec;
+		ws.Cells(r, cHechas).NumberFormat = "@";
+		ws.Cells(r, cHechas).Value = "'" + f.hechas + " de " + nSec;
 		var cp = ws.Cells(r, cPct);
 		cp.Value = f.pct;
 		var cc = colorPct(f.pct);
@@ -383,7 +411,7 @@ function hojaAvance(ws, filas, secciones, subt) {
 		var cuerpo = rango(ws, r0, 1, rUlt, ncols);
 		bordes(cuerpo);
 		cuerpo.VerticalAlignment = -4108;
-		rango(ws, r0, 3, rUlt, ncols).HorizontalAlignment = -4108;
+		rango(ws, r0, 4, rUlt, ncols).HorizontalAlignment = -4108;
 		rango(ws, r0, cIni, rUlt, cIni + nSec - 1).Font.Size = 13;
 		rango(ws, r0, cPct, rUlt, cPct).NumberFormat = "0%";
 		ws.Cells(r0, 1).Resize(filas.length, 1).HorizontalAlignment = -4108;
@@ -423,17 +451,17 @@ function hojaAvance(ws, filas, secciones, subt) {
 			[ST_NO,   "No existe: la aplicación no tiene el paquete de esta sección"]
 		];
 		for (var k = 0; k < ley.length; k++) {
-			var c1 = ws.Cells(rl + 1 + k, 3);
+			var c1 = ws.Cells(rl + 1 + k, 4);
 			c1.Value = SIMBOLO[ley[k][0]];
 			c1.HorizontalAlignment = -4108;
 			pintar(c1, FILL_ST[ley[k][0]], FONT_ST[ley[k][0]], true);
-			ws.Cells(rl + 1 + k, 4).Value = ley[k][1];
+			ws.Cells(rl + 1 + k, 5).Value = ley[k][1];
 		}
 		var esc = [[1, "100%"], [0.75, "75% – 99%"], [0.5, "50% – 74%"], [0.25, "25% – 49%"], [0, "0% – 24%"]];
 		ws.Cells(rl + 5, 2).Value = "% Avance";
 		ws.Cells(rl + 5, 2).Font.Bold = true;
 		for (var e = 0; e < esc.length; e++) {
-			var c2 = ws.Cells(rl + 6 + e, 3);
+			var c2 = ws.Cells(rl + 6 + e, 4);
 			var ccol = colorPct(esc[e][0]);
 			c2.Value = esc[e][1];
 			c2.HorizontalAlignment = -4108;
@@ -443,9 +471,10 @@ function hojaAvance(ws, filas, secciones, subt) {
 
 	ws.Columns(1).ColumnWidth = 5;
 	ws.Columns(2).ColumnWidth = 34;
-	ws.Columns(3).ColumnWidth = 13;
+	ws.Columns(3).ColumnWidth = 22;
+	ws.Columns(4).ColumnWidth = 13;
 	for (var s5 = 0; s5 < nSec; s5++) ws.Columns(cIni + s5).ColumnWidth = 13;
-	ws.Columns(cHechas).ColumnWidth = 11;
+	ws.Columns(cHechas).ColumnWidth = 13;
 	ws.Columns(cPct).ColumnWidth = 11;
 	try { rango(ws, rH, 1, rUlt, ncols).AutoFilter(); } catch (eAF) {}
 	return { filaEncab: rH + 1 };
@@ -588,7 +617,7 @@ function generarExcel(filas, secciones, detalle, ruta, subt) {
 	excel.ScreenUpdating = true;
 	congelar(excel, wb.Worksheets(3), 4, 2);
 	congelar(excel, wb.Worksheets(2), 4, 0);
-	congelar(excel, wb.Worksheets(1), info.filaEncab, 2);
+	congelar(excel, wb.Worksheets(1), info.filaEncab, 3);
 	wb.Worksheets(1).Activate();
 	wb.Worksheets(1).Cells(1, 1).Select();
 
@@ -601,14 +630,14 @@ function generarExcel(filas, secciones, detalle, ruta, subt) {
 function generarTexto(filas, secciones, ruta) {
 	var fso = new ActiveXObject("Scripting.FileSystemObject");
 	var f = fso.CreateTextFile(ruta, true, true);
-	var enc = ["#", "Aplicación", "Estado"];
+	var enc = ["#", "Aplicación", "Responsable", "Estado"];
 	for (var s = 0; s < secciones.length; s++) enc.push(secciones[s].nombre);
-	enc.push("Secciones hechas", "% Avance");
+	enc.push("Secciones hechas (de " + secciones.length + ")", "% Avance");
 	f.WriteLine(enc.join("\t"));
 	for (var i = 0; i < filas.length; i++) {
-		var r = [i + 1, filas[i].nombre, filas[i].estado];
+		var r = [i + 1, filas[i].nombre, filas[i].responsable, filas[i].estado];
 		for (var k = 0; k < filas[i].estados.length; k++) r.push(TEXTO_ESTADO[filas[i].estados[k]]);
-		r.push(filas[i].hechas + "/" + secciones.length, Math.round(filas[i].pct * 100) + "%");
+		r.push(filas[i].hechas + " de " + secciones.length, Math.round(filas[i].pct * 100) + "%");
 		f.WriteLine(r.join("\t"));
 	}
 	f.Close();
